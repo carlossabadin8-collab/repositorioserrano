@@ -15,16 +15,23 @@
                     <img src="SERRANO.png" width="40" alt="Logo Serrano">
                 </div>
                 <div class="logo-text-container">
-                    <span class="logo-text">Serrano Cerrajeros</span>
+                    <span class="logo-text" data-i18n="logo.title">Serrano Cerrajeros</span>
                 </div>
             </div>
-            <div class="nav-links">
+            
+            <div class="nav-links" id="navLinks">
                 <a href="#" class="nav-link active" data-page="inicio">Inicio</a>
                 <a href="#" class="nav-link" data-page="servicios">Servicios</a>
                 <a href="#" class="nav-link" data-page="valoraciones">Valoraciones</a>
                 <a href="#" class="nav-link" data-page="contacto">Contacto</a>
+                
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+                    <button class="lang-btn" data-lang="ca" title="Català">🇨🇦</button>
+                </div>
             </div>
-            <button class="hamburger">
+            
+            <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,53 +45,53 @@
         <section id="inicio" class="page active">
             <div class="hero">
                 <div class="hero-content">
-                    <h1>Serrano Cerrajeros</h1>
-                    <p class="tagline">Cerrajería, Carpintería y Reparaciones del Hogar</p>
-                    <p class="subtitle">Tu cerrajero de confianza disponible 24/7</p>
-                    <button class="cta-button" onclick="scrollToContacto(640017827)">Solicitar Servicio 640 017 827</button>
+                    <h1 data-i18n="hero.title">Serrano Cerrajeros</h1>
+                    <p class="tagline" data-i18n="hero.tagline">Cerrajería, Carpintería y Reparaciones del Hogar</p>
+                    <p class="subtitle" data-i18n="hero.subtitle">Tu cerrajero de confianza disponible 24/7</p>
+                    <button class="cta-button" onclick="scrollToContacto('640017827')" data-i18n="hero.cta">Solicitar Servicio 640 017 827</button>
                 </div>
             </div>
 
             <section class="intro-description">
                 <div class="intro-box">
-                    <p class="intro-text">Ofrecemos servicios de <strong>cerrajería e instalación de cerraduras de seguridad</strong> y <strong>pequeñas reparaciones del hogar</strong> en toda la zona del <strong>Vallès y Barcelonès</strong>. Disponibles en Montcada i Reixac, Barcelona, Santa Coloma, La Llagosta, Mollet, Cerdanyola y otras localidades cercanas. <strong>Servicio 24/7 para emergencias</strong> sin gastos adicionales de desplazamiento.</p>
+                    <p class="intro-text" data-i18n="intro.description">Ofrecemos servicios de <strong>cerrajería e instalación de cerraduras de seguridad</strong> y <strong>pequeñas reparaciones del hogar</strong> en toda la zona del <strong>Vallès y Barcelonès</strong>. Disponibles en Montcada i Reixac, Barcelona, Santa Coloma, La Llagosta, Mollet, Cerdanyola y otras localidades cercanas. <strong>Servicio 24/7 para emergencias</strong> sin gastos adicionales de desplazamiento.</p>
                 </div>
             </section>
 
             <section class="features">
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>Respuesta Rápida</h3>
-                    <p>Disponibles en emergencias sin esperas innecesarias</p>
+                    <h3 data-i18n="features.speed">Respuesta Rápida</h3>
+                    <p data-i18n="features.speed_desc">Disponibles en emergencias sin esperas innecesarias</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Profesionales</h3>
-                    <p>Técnicos certificados y con amplia experiencia</p>
+                    <h3 data-i18n="features.professional">Profesionales</h3>
+                    <p data-i18n="features.professional_desc">Técnicos certificados y con amplia experiencia</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💰</div>
-                    <h3>Precios Justos</h3>
-                    <p>Presupuesto transparente sin sorpresas</p>
+                    <h3 data-i18n="features.price">Precios Justos</h3>
+                    <p data-i18n="features.price_desc">Presupuesto transparente sin sorpresas</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">👨‍🔧</div>
-                    <h3>Confianza</h3>
-                    <p>Clientes satisfechos en la zona</p>
+                    <h3 data-i18n="features.trust">Confianza</h3>
+                    <p data-i18n="features.trust_desc">Clientes satisfechos en la zona</p>
                 </div>
             </section>
 
             <section class="about">
-                <h2>¿Por Qué Elegirnos?</h2>
+                <h2 data-i18n="about.title">¿Por Qué Elegirnos?</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Serrano Cerrajeros es tu solución integral para problemas de cerrajería y pequeñas reparaciones en el hogar. </p>
-                        <ul class="benefits-list">
-                            <li>✓ Disponibilidad 24/7 para emergencias</li>
-                            <li>✓ Técnicos certificados y seguros</li>
-                            <li>✓ Equipamiento profesional</li>
-                            <li>✓ Garantía en nuestros trabajos</li>
-                            <li>✓ Presupuestos sin compromiso</li>
+                        <p data-i18n="about.intro">Serrano Cerrajeros es tu solución integral para problemas de cerrajería y pequeñas reparaciones en el hogar.</p>
+                        <ul class="benefits-list" id="benefitsList">
+                            <li data-i18n="about.benefit1">✓ Disponibilidad 24/7 para emergencias</li>
+                            <li data-i18n="about.benefit2">✓ Técnicos certificados y seguros</li>
+                            <li data-i18n="about.benefit3">✓ Equipamiento profesional</li>
+                            <li data-i18n="about.benefit4">✓ Garantía en nuestros trabajos</li>
+                            <li data-i18n="about.benefit5">✓ Presupuestos sin compromiso</li>
                         </ul>
                     </div>
                     <div class="about-visual">
@@ -97,8 +104,8 @@
         <!-- Página de Servicios -->
         <section id="servicios" class="page">
             <div class="page-header">
-                <h1>Nuestros Servicios</h1>
-                <p>Soluciones profesionales para todos tus problemas</p>
+                <h1 data-i18n="services.title">Nuestros Servicios</h1>
+                <p data-i18n="services.subtitle">Soluciones profesionales para todos tus problemas</p>
             </div>
 
             <div class="services-image-container">
@@ -108,47 +115,47 @@
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon">🔑</div>
-                    <h3>Cerrajería</h3>
-                    <ul>
-                        <li>Apertura de puertas de urgencia</li>
-                        <li>Cambio de cerraduras</li>
-                        <li>Instalación de cerraduras</li>
-                        <li>Cerraduras de seguridad</li>
+                    <h3 data-i18n="services.locksmith">Cerrajería</h3>
+                    <ul id="locksmiths_list">
+                        <li data-i18n="services.locksmith_item1">Apertura de puertas de urgencia</li>
+                        <li data-i18n="services.locksmith_item2">Cambio de cerraduras</li>
+                        <li data-i18n="services.locksmith_item3">Instalación de cerraduras</li>
+                        <li data-i18n="services.locksmith_item4">Cerraduras de seguridad</li>
                     </ul>
                 </div>
 
                 <div class="service-item">
                     <div class="service-icon">🪵</div>
-                    <h3>Carpintería</h3>
-                    <ul>
-                        <li>Reparación de puertas i ventanas</li>
-                        <li>Reparación de muebles</li>
-                        <li>Trabajos a medida</li>
+                    <h3 data-i18n="services.carpentry">Carpintería</h3>
+                    <ul id="carpentry_list">
+                        <li data-i18n="services.carpentry_item1">Reparación de puertas i ventanas</li>
+                        <li data-i18n="services.carpentry_item2">Reparación de muebles</li>
+                        <li data-i18n="services.carpentry_item3">Trabajos a medida</li>
                     </ul>
                 </div>
 
                 <div class="service-item">
                     <div class="service-icon">🔧</div>
-                    <h3>Reparaciones del Hogar</h3>
-                    <ul>
-                        <li>Reparaciones menores</li>
-                        <li>Mantenimiento preventivo</li>
-                        <li>Instalación de accesorios</li>
-                        <li>Solución de averías</li>
-                        <li>Trabajos puntuales</li>
+                    <h3 data-i18n="services.repairs">Reparaciones del Hogar</h3>
+                    <ul id="repairs_list">
+                        <li data-i18n="services.repairs_item1">Reparaciones menores</li>
+                        <li data-i18n="services.repairs_item2">Mantenimiento preventivo</li>
+                        <li data-i18n="services.repairs_item3">Instalación de accesorios</li>
+                        <li data-i18n="services.repairs_item4">Solución de averías</li>
+                        <li data-i18n="services.repairs_item5">Trabajos puntuales</li>
                     </ul>
                 </div>
 
                 <div class="service-item">
                     <div class="service-icon">🚨</div>
-                    <h3>Urgencias 24/7</h3>
-                    <ul>
-                        <li>Disponibilidad permanente</li>
-                        <li>Respuesta inmediata</li>
-                        <li>Sin gastos de desplazamiento</li>
-                        <li>Solución rápida</li>
-                        <li>Emergencias incluidas</li>
-                        <li>Respesta por llamada o Whatsapp</li>
+                    <h3 data-i18n="services.emergency">Urgencias 24/7</h3>
+                    <ul id="emergency_list">
+                        <li data-i18n="services.emergency_item1">Disponibilidad permanente</li>
+                        <li data-i18n="services.emergency_item2">Respuesta inmediata</li>
+                        <li data-i18n="services.emergency_item3">Sin gastos de desplazamiento</li>
+                        <li data-i18n="services.emergency_item4">Solución rápida</li>
+                        <li data-i18n="services.emergency_item5">Emergencias incluidas</li>
+                        <li data-i18n="services.emergency_item6">Respuesta por llamada o Whatsapp</li>
                     </ul>
                 </div>
             </div>
@@ -157,89 +164,55 @@
         <!-- Página de Valoraciones -->
         <section id="valoraciones" class="page">
             <div class="page-header">
-                <h1>Valoraciones de Clientes</h1>
-                <p>Lo que dicen nuestros clientes satisfechos</p>
+                <h1 data-i18n="reviews.title">Valoraciones de Clientes</h1>
+                <p data-i18n="reviews.subtitle">Lo que dicen nuestros clientes satisfechos</p>
             </div>
 
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"Excelente servicio. Llegaron en 15 minutos cuando me quedé fuera de casa. Muy profesionales y amables."</p>
-                    <p class="review-author">- María García</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"Perfecto, presupuesto justo y trabajo bien hecho. Los recomiendo sin dudarlo."</p>
-                    <p class="review-author">- Josep Martínez</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"He usado su servicio varias veces. Confiables, puntuales y con excelente trato al cliente."</p>
-                    <p class="review-author">- Ana López</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"Llamé a las 2 de la mañana y vinieron sin problemas. Gracias por la profesionalidad."</p>
-                    <p class="review-author">- Carlos Rodríguez</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"La mejor opción. Técnicos cualificados y precio muy competitivo."</p>
-                    <p class="review-author">- Elena Ferrer</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"Resolvieron mi problema en 10 minutos. Muy recomendable para emergencias."</p>
-                    <p class="review-author">- Pedro Sánchez</p>
-                </div>
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Las valoraciones se generarán con JavaScript -->
             </div>
         </section>
 
         <!-- Página de Contacto -->
         <section id="contacto" class="page">
             <div class="page-header">
-                <h1>Contacto</h1>
-                <p>¿Necesitas ayuda? Ponte en contacto con nosotros</p>
+                <h1 data-i18n="contact.title">Contacto</h1>
+                <p data-i18n="contact.subtitle">¿Necesitas ayuda? Ponte en contacto con nosotros</p>
             </div>
 
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>📞 Teléfono</h3>
+                        <h3 data-i18n="contact.phone">📞 Teléfono</h3>
                         <p><a href="tel:+34640017827">+34 640 017 827</a></p>
-                        <p class="small-text">Disponible 24/7 para emergencias</p>
+                        <p class="small-text" data-i18n="contact.phone_desc">Disponible 24/7 para emergencias</p>
                     </div>
 
                     <div class="contact-item">
-                        <h3>📧 Email</h3>
+                        <h3 data-i18n="contact.email">📧 Email</h3>
                         <p><a href="mailto:info@serranocerrajeros.com">info@serranocerrajeros.com</a></p>
-                        <p class="small-text">Respuesta en menos de 2 horas</p>
+                        <p class="small-text" data-i18n="contact.email_desc">Respuesta en menos de 2 horas</p>
                     </div>
 
                     <div class="contact-item">
-                        <h3>📍 Barcelona i Vallès Occidental</h3>
-                        <p>Barcelona, Montcada i Reixac, La Llagosta, Cerdanyola, Mollet...</p>
-                        <p class="small-text">Disponibles en toda la zona</p>
+                        <h3 data-i18n="contact.location">📍 Barcelona i Vallès Occidental</h3>
+                        <p data-i18n="contact.location_cities">Barcelona, Montcada i Reixac, La Llagosta, Cerdanyola, Mollet...</p>
+                        <p class="small-text" data-i18n="contact.location_desc">Disponibles en toda la zona</p>
                     </div>
 
                     <div class="contact-item">
-                        <h3>⏰ Horario</h3>
-                        <p>24/7 para emergencias</p>
-                        <p class="small-text">Disponibilidad continua</p>
+                        <h3 data-i18n="contact.hours">⏰ Horario</h3>
+                        <p data-i18n="contact.hours_text">24/7 para emergencias</p>
+                        <p class="small-text" data-i18n="contact.hours_desc">Disponibilidad continua</p>
                     </div>
                 </div>
 
                 <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <input type="tel" placeholder="Tu teléfono" required>
-                    <textarea placeholder="Cuéntanos tu problema..." rows="5" required></textarea>
-                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                    <input type="text" placeholder="Tu nombre" data-i18n-placeholder="contact.form.name" required>
+                    <input type="email" placeholder="Tu email" data-i18n-placeholder="contact.form.email" required>
+                    <input type="tel" placeholder="Tu teléfono" data-i18n-placeholder="contact.form.phone" required>
+                    <textarea placeholder="Cuéntanos tu problema..." data-i18n-placeholder="contact.form.message" rows="5" required></textarea>
+                    <button type="submit" class="submit-button" data-i18n="contact.form.submit">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
@@ -248,11 +221,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Serrano Cerrajeros. Todos los derechos reservados.</p>
-            <p>Cerrajería, Carpintería y Reparaciones del Hogar</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Serrano Cerrajeros. Todos los derechos reservados.</p>
+            <p data-i18n="footer.description">Cerrajería, Carpintería y Reparaciones del Hogar</p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
