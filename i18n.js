@@ -1,5 +1,11 @@
 const translations = {
     es: {
+        nav: {
+            home: "Inicio",
+            services: "Servicios",
+            reviews: "Valoraciones",
+            contact: "Contacto"
+        },
         logo: {
             title: "Serrano Cerrajeros"
         },
@@ -120,6 +126,12 @@ const translations = {
         ]
     },
     ca: {
+        nav: {
+            home: "Inici",
+            services: "Serveis",
+            reviews: "Valoracions",
+            contact: "Contacte"
+        },
         logo: {
             title: "Serrano Serrallers"
         },
