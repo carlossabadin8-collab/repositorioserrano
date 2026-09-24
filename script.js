@@ -42,33 +42,6 @@ function scrollToContacto() {
     contactLink.click();
 }
 
-// Manejo del formulario de contacto
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Obtener valores del formulario
-        const nombre = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const telefono = contactForm.querySelector('input[type="tel"]').value;
-        const mensaje = contactForm.querySelector('textarea').value;
-        
-        // Aquí puedes integrar un servicio de email o API
-        // Por ahora mostramos un mensaje de éxito
-        
-        // Crear mensaje de WhatsApp para que el usuario copie
-        const whatsappMessage = `Hola, soy ${nombre}. Mi email es ${email}, teléfono ${telefono}. Mi mensaje: ${mensaje}`;
-        const whatsappLink = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
-        
-        // Mostrar alerta de éxito
-        alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-        
-        // Limpiar formulario
-        contactForm.reset();
-    });
-}
-
 // Efecto de fade-in para elementos al hacer scroll
 const observerOptions = {
     threshold: 0.1,
@@ -98,27 +71,6 @@ document.addEventListener('click', (e) => {
         navLinksContainer.classList.remove('active');
         hamburger.classList.remove('active');
     }
-});
-
-// Validación básica del formulario
-const formInputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
-formInputs.forEach(input => {
-    input.addEventListener('blur', () => {
-        if (input.type === 'email') {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(input.value)) {
-                input.style.borderColor = '#ff6b6b';
-            } else {
-                input.style.borderColor = '#FFD700';
-            }
-        } else if (input.type === 'tel') {
-            if (input.value.length < 9) {
-                input.style.borderColor = '#ff6b6b';
-            } else {
-                input.style.borderColor = '#FFD700';
-            }
-        }
-    });
 });
 
 // Smooth scroll mejorado
