@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serrano Cerrajeros - Cerrajería y Reparaciones del Hogar</title>
+    <link rel="icon" href="SERRANO.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,14 +21,16 @@
             </div>
             
             <div class="nav-links" id="navLinks">
-                <a href="#" class="nav-link active" data-page="inicio">Inicio</a>
-                <a href="#" class="nav-link" data-page="servicios">Servicios</a>
-                <a href="#" class="nav-link" data-page="valoraciones">Valoraciones</a>
-                <a href="#" class="nav-link" data-page="contacto">Contacto</a>
+                <a href="#" class="nav-link active" data-page="inicio" data-i18n="nav.home">Inicio</a>
+                <a href="#" class="nav-link" data-page="servicios" data-i18n="nav.services">Servicios</a>
+                <a href="#" class="nav-link" data-page="valoraciones" data-i18n="nav.reviews">Valoraciones</a>
+                <a href="#" class="nav-link" data-page="contacto" data-i18n="nav.contact">Contacto</a>
                 
                 <div class="language-selector">
                     <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
-                    <button class="lang-btn" data-lang="ca" title="Català">🇨🇦</button>
+                    <button class="lang-btn" data-lang="ca" title="Català">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Crect width='900' height='600' fill='%23ffcc00'/%3E%3Cg fill='%23ff0000'%3E%3Crect y='0' width='900' height='100'/%3E%3Crect y='200' width='900' height='100'/%3E%3Crect y='400' width='900' height='100'/%3E%3C/g%3E%3C/svg%3E" alt="Bandera de Catalunya" class="flag-cat">
+                    </button>
                 </div>
             </div>
             
@@ -206,13 +209,11 @@
                         <p class="small-text" data-i18n="contact.hours_desc">Disponibilidad continua</p>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Tu nombre" data-i18n-placeholder="contact.form.name" required>
-                    <input type="email" placeholder="Tu email" data-i18n-placeholder="contact.form.email" required>
-                    <input type="tel" placeholder="Tu teléfono" data-i18n-placeholder="contact.form.phone" required>
-                    <textarea placeholder="Cuéntanos tu problema..." data-i18n-placeholder="contact.form.message" rows="5" required></textarea>
-                    <button type="submit" class="submit-button" data-i18n="contact.form.submit">Enviar Mensaje</button>
-                </form>
+
+                <!-- Google Maps -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.749822851456!2d2.1879!3d41.5273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a48c8d8c8c8c8d%3A0x8c8c8c8c8c8c8c8c!2sMontcada%20i%20Reixac%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
     </main>
