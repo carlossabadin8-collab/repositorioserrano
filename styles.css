@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-padding-top: 90px;
-}
-
 :root {
     --primary-color: #3a4a5c;
     --secondary-color: #e74c3c;
@@ -578,10 +574,6 @@ body {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    html {
-        scroll-padding-top: 80px;
-    }
-
     .hero {
         padding: 50px 20px;
     }
@@ -623,10 +615,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    html {
-        scroll-padding-top: 70px;
-    }
-
     .nav-container {
         height: 60px;
         padding: 0 15px;
