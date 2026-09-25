@@ -151,7 +151,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: var(--navbar-text);
+    background-color: #1a1a1a;
     transition: all 0.3s ease;
     border-radius: 2px;
 }
@@ -186,12 +186,16 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        visibility: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
-        max-height: 400px;
+        max-height: 500px;
+        visibility: visible;
+        opacity: 1;
     }
 
     .nav-link {
